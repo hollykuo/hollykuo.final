@@ -36,7 +36,7 @@
 
 
 p{
-    padding: 30px;
+    padding: 60px;
     font-family:STHeiti;
 
 }
@@ -47,17 +47,20 @@ h1{
     text-align: center;
 }
 
-
+h2{
+    font-family:STHeiti;
+    text-align: center;
+}
 
 
 h3{
     font-family:STHeiti;
+    padding: 0 250px;
 }
 
 h4{
     font-family:STHeiti;
-    text-indent:2em; text-align:justify; padding:0 100px 0 100px;
-}
+    text-indent:2em; text-align:justify; padding:0 250px;}
 
 #wideobj {
     position: relative;
@@ -560,7 +563,7 @@ html, body {
 }
 
 .bgimg-3 {
-  background-image: url("assets/3.jpg");
+  background-image: url("assets/3.JPG");
   min-height: 100%;
 }
 
@@ -641,7 +644,310 @@ html, body {
  
 
 
+*{margin: 0;padding: 0;}
+body {
+  background: #ddd;
+}
 
+#container
+{
+height: 600px;
+width: 100%;
+background-color: #ddd;
+overflow: hidden;
+position: relative;
+#overflow-x: scroll;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#thumbs
+{
+background-color: #ddd;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: auto;
+overflow: hidden;
+white-space: nowrap;
+padding: 30px 100px;
+}
+
+.history-block {
+  height: 100%;
+  width: 300px;
+  background-color: #cdcdcd;
+  margin: 0 -2px;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  font-family: 'roboto condensed', sans-serif;
+  font-size:60px;
+  font-weight: 100;
+  color: #FFF;
+  cursor: pointer;
+  box-shadow: 2px 5px 20px rgba(0,0,0,0.8);
+  transition: width 0.2s;
+}
+
+.history-block:last-of-type {
+  border-right: none;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  transition: background .5s;
+  background: rgba(0,0,0,0.8);
+}
+
+.cover:hover {
+  width: 100%;
+  height: 100%;
+  transition: background .5s;
+  background: rgba(0,0,0,0.8);
+}
+
+.year {
+  position: absolute;
+    top: 0px;
+    font-size: 30px;
+  font-weight:500;
+    margin: 40px 30px;
+}
+
+.title {
+  position: absolute;
+  display: block;
+  width: 260px;
+    top: 60px;
+    font-size: 18px;
+    margin: 30px;
+  white-space: normal;
+  transition: width 0.2s;
+}
+
+.timeline {
+  display:none;
+  position: absolute;
+  bottom: 80px;
+    font-size: 20px;
+font-family: STHeiti;
+    margin: 20px;
+  transition: display 0.8s;
+}
+
+.timeline ul {
+  margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.timeline ul li {
+  display: inline;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0px 5px;
+}
+
+.timeline ul li {
+  display: inline;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0px 5px;
+}
+
+.timeline ul li:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255,255,255,0.5);
+  content: '\f10c';
+  position: absolute;
+  top: 30px;
+  margin-left:10px;
+  transition: all 0.5s;
+}
+
+.timeline ul li:after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  margin-left:-10px;
+  width: 36px;
+  height:2px;
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.5s;
+}
+
+.timelineYear, .timelineYear:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.8s;
+}
+
+.timeline ul li:hover:before {
+  content: '\f111';
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.5s;
+  top: 29px;
+  margin-left:9px
+}
+
+.timeline ul li:hover:after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  margin-left:-10px;
+  width: 36px;
+  height:2px;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.timeline ul li:hover .timelineYear {
+  position: static;
+  top:-10px;
+}
+
+.bg-66 {
+  background: url(assets/t1.jpg);
+  background-size:cover;
+}
+
+.bg-76 {
+  background: url();
+  background-size:cover;
+}
+
+.bg-86 {
+  background: url('assets/t2.png');
+  background-size:cover;
+}
+
+.bg-96 {
+  background: url();
+  background-size:cover;
+}
+
+.bg-06 {
+  background: url(assets/t3.jpg);
+  background-size:cover;
+}
+
+.bg-16 {
+  background: url();
+  background-size:cover;
+}
+
+
+
+
+
+
+        #Keelung2 {
+            background-image: url("https://b07303016.github.io/2.png");
+            background-position: 0% 80%;
+            background-attachment: fixed;
+            min-height: 200vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        #Keelung1 {
+            background-image: url("https://b07303016.github.io/1.png");
+            background-position: 0% 80%;
+            background-attachment: fixed;
+            min-height: 200vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #Keelung3 {
+            background-image: url("https://b07303016.github.io/3.png");
+            background-position: 0% 80%;
+            background-attachment: fixed;
+            min-height: 200vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #Keelung4 {
+            background-image: url("https://b07303016.github.io/4.png");
+            background-position: 0% 80%;
+            background-attachment: fixed;
+            min-height: 200vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #Keelung5 {
+            background-image: url("https://b07303016.github.io/5.png");
+            background-position: 0% 80%;
+            background-attachment: fixed;
+            min-height: 200vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+
+        .slideanimate {
+            visibility: hidden;
+        }
+
+        .slide {
+            visibility: visible;
+            position: fixed;
+        }
+
+        #interviewimg {
+            width: auto;
+            height: auto;
+            /*             z-index: 2; */
+            position: relative;
+            padding-right: 50px;
+            display: block;
+            margin: auto;
+        }
+
+        #content h3 {
+            color: aliceblue;
+            width: auto;
+            padding-top: 60px;
+            line-height: 40px;
+            font-size: 19px;
+        }
+
+        #content h2 {
+            color: white;
+            text-align: 40px;
+        }
+
+        .slideanimate1 {
+            width: 100%;
+            visibility: hidden;
+        }
+
+        .slide1 {
+            animation-name: slide;
+            animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide1 {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
 
 
 
